@@ -33,6 +33,23 @@ Student.delete_all
 @student3.save
 @student4.save
 
+@house1 = House.new ({
+  "name" => "Hufflepuff"
+  })
+@house2 = House.new ({
+  "name" => "Slytherin"
+  })
+@house3 = House.new ({
+  "name" => "Ravenclaw"
+  })
+@house4 = House.new ({
+  "name" => "Gryffindor"
+  })
+
+
+
+
+
 binding.pry
 
 nil
