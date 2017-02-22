@@ -8,6 +8,8 @@ class Student
     @age = options['age'].to_i
   end
 
-
+  def save
+    
+  end 
 
 end
