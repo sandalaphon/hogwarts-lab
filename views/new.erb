@@ -1,4 +1,4 @@
-<p>djvksld</p>
+<p>Please Enter Student/p>
 
 <form method="POST" action="/students"> 
   <label for="first-name">First Name</label> 
@@ -7,15 +7,12 @@
   <label for="last-name">Last Name</label> 
     <input type="text" name="last_name" id="last-name"/>
 
-  <label for="house">Select House:</label>
+  <label for="house-id">Select House:</label>
 
-    <select id="house-select" name="house">
-
-        <option value="Hufflepuff">Hufflepuff</option>
-        <option value="Slytherin">Slytherin</option>
-        <option value="Gryffindor">Gryffindor</option>
-        <option value="Ravenclaw">Ravenclaw</option>
-
+    <select id="house-id" name="house_id">
+    <% @houses.each do |house| %>
+        <option value=<%=house.id%>><%=house.name%></option>
+      <%end%>
      </select>
 
   <label for="age">Age:</label>
